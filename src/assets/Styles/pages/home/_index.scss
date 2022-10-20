@@ -1,0 +1,22 @@
+@use '../../helpers/colors' as col;
+
+.home-page {
+    height: 100%;
+    width: 100%;
+
+    .home-header-component {
+        width: 100%;
+        height: 65vh;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .home-footer-component {
+        width: 100%;
+        height: 35vh;
+        display: flex
+    }
+}
+
+@import './header';
+@import './footer';

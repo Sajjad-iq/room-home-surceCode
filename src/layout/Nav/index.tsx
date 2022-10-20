@@ -1,15 +1,12 @@
-import Buttons from "./_buttons";
-import logo from '../../assets/Images/shared/logo.svg'
-
-import BurgerBTN from "./_burger_btn";
-
+import Buttons from "../../components/common/NavButtons";
+import logo from '../../assets/icons/logo.svg'
+import BurgerButton_Component from "../../components/shared/burger_btn";
 export default function Navigation() {
     return (
-        <nav className="Navigation">
-            <img className="logo" src={logo} alt="logo" />
-            <hr className="HR-line" />
+        <nav className="navigation">
+            <BurgerButton_Component />
+            <img src={logo} className="logo" alt="logo" />
             <Buttons />
-            <BurgerBTN />
         </nav>
     )
 }

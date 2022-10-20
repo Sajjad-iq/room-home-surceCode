@@ -1,0 +1,30 @@
+.mobil-nav-bar-component {
+    display: none;
+    width: 100%;
+    padding: 30px 25px;
+    justify-content: space-between;
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    background-color: white;
+
+    .buttons-component {
+        width: 75%;
+        display: flex;
+        justify-content: space-around;
+
+        .nav-button {
+            font-family: 'League Spartan', sans-serif;
+            color: black;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+    }
+
+    .close-button-component {
+        font-size: 1.2rem;
+        border: none;
+        background: none;
+        color: gray;
+    }
+}

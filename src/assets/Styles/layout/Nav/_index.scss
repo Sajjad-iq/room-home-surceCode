@@ -1,33 +1,31 @@
 @use '../../helpers/colors' as col;
 
-.Navigation {
+.navigation {
     width: 100%;
-    height: fit-content;
-    position: absolute;
-    top: 5%;
-    left: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
-    .HR-line {
-        position: absolute;
-        top: 50%;
-        left: 14%;
-        width: 35%;
-        height: 1px;
-        border: none;
-        background: col.$light-blue;
-        z-index: 10;
-    }
+    position: absolute;
+    left: 0;
+    top: 50px;
+    padding: 0 40px;
 
     .logo {
-        width: 40px;
-        height: 40px;
-        margin-left: 50px;
+        width: 85px;
+    }
+
+    .buttons-component {
+        width: 23%;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 30px;
+
+        .nav-button {
+            text-decoration: none;
+            color: col.$White;
+            padding: 5px 0;
+            position: relative;
+        }
     }
 }
 
-
-@import './buttons';
-@import './burger_btn';
+@import './burger-btn'

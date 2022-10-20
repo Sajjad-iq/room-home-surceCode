@@ -1,0 +1,52 @@
+ @use '../../helpers/colors' as col;
+
+ .home-content-side-component {
+     width: 40%;
+     height: 65vh;
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     .home-content-side-component-wrapper {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         justify-content: space-between;
+         width: 70%;
+         height: 65%;
+
+         .header {
+             font-size: 2rem;
+         }
+
+         .body {
+             font-size: 1rem;
+             line-height: 30px;
+             color: col.$Dark-Gray;
+         }
+
+         .shop-now-btn {
+             font-size: 1rem;
+             font-family: 'League Spartan', sans-serif;
+             letter-spacing: 10px;
+             border: none;
+             background: none;
+             cursor: pointer;
+
+             .arrow-icon {
+                 width: 60px;
+             }
+
+             &:hover {
+                 opacity: 0.6;
+             }
+         }
+     }
+
+     .home-img-side-component {
+         width: 60%;
+         height: 100%;
+         object-fit: cover;
+     }
+ }

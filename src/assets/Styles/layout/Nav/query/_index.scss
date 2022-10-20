@@ -1,0 +1,108 @@
+@include FHDScreen {
+    .navigation {
+        padding: 0 100px;
+
+        .logo {
+            width: 125px;
+        }
+
+        .buttons-component {
+            width: 30%;
+            margin-left: 60px;
+
+            .nav-button {
+                font-size: 1.6rem;
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+@include MidScreen {
+    .navigation {
+        padding: 0 75px;
+
+        .logo {
+            width: 100px;
+        }
+
+        .buttons-component {
+            width: 25%;
+            margin-left: 40px;
+
+            .nav-button {
+                font-size: 1.3rem;
+                padding: 8px 0;
+            }
+        }
+    }
+}
+
+@include SmallTablet {
+    .navigation {
+        padding: 0 75px;
+        top: 5%;
+
+        .logo {
+            width: 75px;
+
+        }
+
+        .buttons-component {
+            width: 35%;
+            margin-left: 25px;
+
+            .nav-button {
+                padding: 5px 0;
+            }
+        }
+    }
+}
+
+@include phone {
+    .navigation {
+        padding: 0 75px;
+        top: 40px;
+        justify-content: center;
+
+        .logo {
+            width: 75px;
+
+        }
+
+        .buttons-component {
+            width: 65%;
+            margin-left: 25px;
+
+            .nav-button {
+                padding: 5px 0;
+            }
+        }
+    }
+}
+
+@include SmallPhone {
+    .navigation {
+        padding: 0 35px;
+        top: 35px;
+        justify-content: center;
+
+        .logo {
+            width: 80px;
+        }
+
+        .buttons-component {
+            display: none;
+        }
+
+        .burger-button-component {
+            display: flex;
+            position: absolute;
+            left: 7%;
+
+            .burger-icon {
+                width: 30px;
+            }
+        }
+    }
+}
